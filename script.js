@@ -1,8 +1,6 @@
+var button = $("#lead-banner a");
 
-
-$("#social-nav").css({
-    "top" : "-400px",
-    "left" : "150px",
-    "opacity" : "0.5",
-    "border-top" : "4px solid red"
-});
+button[0].onClick = function() {
+    $("#points-of-sale").toggleClass("open");
+    return false;
+};
