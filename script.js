@@ -1,6 +1,8 @@
-var button = $("#lead-banner a");
+var myLis = ("#points-of-sale li");
 
-button[0].onClick = function() {
-    $("#points-of-sale").toggleClass("open");
-    return false;
-};
+myLis.on("click", function () {
+   $(this).css({"background" : "pink"});
+   
+   myLis.off("click");
+   
+});
