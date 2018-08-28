@@ -1,9 +1,16 @@
-$(document).ready("click", function(){
-   $("*").on("click", function(e){
-      console.log(e.target);
-      console.log("event type is! " + e.type);
-      console.log("x coordinates of the event is! " + e.pageX);
-      console.log("Y coordinates of the event is! " + e.pageY);
-      e.stopPropagation();
+$(document).ready(function(){
+   
+   function complete(){
+      alert("animation complete");
+   }
+
+$("section > h2").on("click", function(){
+   
+   $(this).animate({"width" : "500px", "height" : "100px"}, 1000, "linear",
+   complete);
+   
+   
+   
    });
+   
 });
