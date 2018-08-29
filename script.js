@@ -1,9 +1,9 @@
 $(document).ready(function(){
    
-$("img[alt=map]").on("click", function(){
-   
-   $("section > h2").toggle(1000);
+$(".slide-button-up").on("click", function(){
+   $("#lead-banner").slideToggle(1000);
    
  });
+   
    
 });
